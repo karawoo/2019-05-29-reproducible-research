@@ -31,6 +31,7 @@ tidytools <-  c(
   "glue",
   "knitr",
   "rmarkdown",
+  "devtools",
   "usethis",
   "rstudioapi",
   "gapminder",
