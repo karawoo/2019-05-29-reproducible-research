@@ -1,0 +1,26 @@
+---
+title: "Setup"
+output:
+  xaringan::moon_reader:
+    seal: FALSE
+    lib_dir: libs
+---
+
+<style type="text/css">
+p, ul, ol {
+    font-size: 32px;
+}
+
+.remark-slide-number {
+  display: none;
+}
+</style>
+
+
+# Welcome!
+
+## If you haven't already, please:
+
+1. Install the R packages we'll be using: [bit.ly/sdss-rr](http://bit.ly/sdss-rr)
+2. Install git: https://happygitwithr.com/install-git.html (ask us if you need help!)
+3. Create a GitHub account: https://github.com/
