@@ -1,0 +1,84 @@
+---
+title: "Version Control with git and GitHub"
+author: "Kara Woo & Karthik Ram"
+date: "2019-05-29"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+<style type="text/css">
+p, ul {
+    font-size: 32px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
+![](images/version-control.png)
+
+---
+class: inverse, center, middle
+
+"think of it as the 'Track Changes' features from Microsoft Word on steroids." 
+
+-Jenny Bryan
+
+https://happygitwithr.com/big-picture.html
+
+---
+
+# How it works
+
+--
+
+- You tell git to watch your project
+
+--
+
+- Git detects when things have changed
+
+--
+
+- You save snapshots ("commits") of your project
+
+--
+
+- Git lets you go back in time to any previous snapshot
+
+---
+class: center
+
+![](images/version-control.png)
+
+If I had used git, I could see a record of what changed between versions of this
+script.
+
+---
+# GitHub
+
+A place to share (and collaborate on) your projects
+
+![](https://github.githubassets.com/images/modules/open_graph/github-octocat.png)
+
+---
+# GitHub
+
+- You work on your computer, and save snapshots of your project as you go
+
+--
+
+- Periodically, you share what you've done to GitHub
+
+--
+
+- If you're collaborating with others, then can then access your changes, and vice versa
+
