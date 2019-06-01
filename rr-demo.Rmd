@@ -1,0 +1,58 @@
+---
+title: "My Report"
+author: "Kara Woo"
+date: "5/29/2019"
+output: 
+  html_document:
+    keep_md: true
+---
+
+```{r global_options, echo = FALSE}
+## Setting default options. echo = FALSE hides code chunks by default;
+## figs.path sets a location to save figures
+knitr::opts_chunk$set(echo = FALSE, fig.path = "images/")
+```
+
+*This is some formatting*
+
+**Some other formatting**
+
+[A hyperlink](https://google.com)
+
+- A bulleted list
+- Another list item
+
+1. A numbered list
+1. A second numbered item.
+   1. sub-item
+       1. sub-sub item
+
+```{r load_data}
+library("gapminder")
+library("ggplot2")
+library("tidyverse")
+data(gapminder)
+head(gapminder)
+```
+
+```{r gdp_lifeexp_plot}
+## Plot of GDP vs life expectancy
+ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) +
+  geom_point()
+```
+
+```{r lifeexp_over_time, fig.width = 3}
+## Plot of life expectancy over time
+ggplot(data = gapminder, mapping = aes(x = year, y = lifeExp)) +
+  geom_point()
+```
+
+The largest population of any country in this dataset is `r max(gapminder$pop)`.
+
+```{r iceland, echo = TRUE}
+iceland <- filter(gapminder, country == "Iceland")
+max_iceland_lifeexp <- max(iceland$lifeExp)
+```
+
+The maximum life expectancy in Iceland is `r max_iceland_lifeexp`.
+
